@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN PAGE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="container c1">
+            <div class="col-md-6">
+                <div class="col-md-12">
+                    <center>
+                        <img src="/images/login.png" class="img2">
+                    </center>
+                </div>
+                <div class="col-md-12">
+                    <form action="" method="post">
+                        {%csrf_token%}
+                        {{form.as_p}}
+                        <button type="submit" class="btn btn-block btn1">
+                            <i class="fa fa-lock"></i> &nbsp;&nbsp;&nbsp;LOGIN
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <img src="/images/loginbackground.jpg" class="logimg">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+</body>
+<style type="text/css">
+	body{
+		background: rgb(16,8,212);
+background: linear-gradient(117deg, rgba(16,8,212,0.5704656862745099) 35%, rgba(97,123,255,0.7161239495798319) 66%);
+	}
+	.c1{
+		margin-top: 20%;
+		border-radius: 4%;
+		background-color: #fff;
+		height: 50%;
+		width: 100%;
+		box-shadow: 2px 1px 10px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 1px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 1px 10px 1px rgba(0,0,0,0.75);
+	}
+	.logimg{
+
+		align-content: center;
+		border-radius: 50%;
+		width: 100%;
+		margin-top: 25%;
+
+	}
+	.btn1{
+		background: rgb(50,50,198);
+background: linear-gradient(117deg, rgba(50,50,198,0.5914740896358543) 35%, rgba(212,66,8,0.5522584033613445) 100%);font-weight: 600;color:#fff;
+margin-top: 20px;
+margin-bottom: 20px;
+	}
+	.img2{
+		height:100px;
+		margin-top: 10px;
+	}
+
+</style>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class=" col-md-12 c2">
+    <div class="container c1">
+        <img src="/images/img1.png" class="imglogo">
+        <span class="title">EMPLOYEE MANAGEMENT</span>
+    </div>
+</div>
+
+
+<div class="col-md-12">
+    <div class="container cs2">
+        <form action="" method="post">
+            {%csrf_token%}
+            {{form.as_p}}
+            <button type="submit" class="btn btn-block btn-success">
+                <i class="fa fa-user-plus"></i> &nbsp;&nbsp;&nbsp;UPDATE EMPLOYEE
+            </button>
+        </form>
+        <br/><br/>
+    </div>
+</div>
+
+</body>
+
+
+<style type="text/css">
+  .cq1{
+    border-radius: 15px;
+    border-color: #4DCF98;
+    height: 300px;
+    border-width: 2px;
+  }
+  .c1{
+    width: 100%;
+  }
+  .c2{
+    width: 100%;
+    background: #4DCF98;
+    color: #fff;
+  }
+  .imglogo{
+    width: 70px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 10px;
+    margin:10px;
+  }
+  .title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 3%;
+  }
+  .cs2{
+    margin-top: 5%;
+  }
+
+</style>
+
+</html>
+
+
+
